@@ -1,0 +1,61 @@
+:root {
+  color: #07111f;
+  font-family: "Space Grotesk", sans-serif;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  background:
+    radial-gradient(circle at top left, rgba(245, 158, 11, 0.2), transparent 32%),
+    radial-gradient(circle at bottom right, rgba(56, 189, 248, 0.18), transparent 28%),
+    linear-gradient(135deg, #fff9ee 0%, #f8fafc 52%, #eefdf8 100%);
+}
+
+.grid-noise {
+  background-image:
+    linear-gradient(rgba(7, 17, 31, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(7, 17, 31, 0.03) 1px, transparent 1px);
+  background-size: 18px 18px;
+}
+
+.board-enter {
+  animation: board-rise 0.7s ease-out;
+}
+
+.canvas-shell {
+  background:
+    radial-gradient(circle at top, rgba(56, 189, 248, 0.14), transparent 34%),
+    linear-gradient(180deg, #67d8ff 0%, #93dcff 35%, #b0e7ff 100%);
+}
+
+.glow-ring {
+  box-shadow:
+    0 0 0 1px rgba(255, 255, 255, 0.14),
+    0 12px 40px rgba(7, 17, 31, 0.24);
+}
+
+@keyframes board-rise {
+  from {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
