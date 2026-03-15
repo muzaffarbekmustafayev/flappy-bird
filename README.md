@@ -2,6 +2,8 @@
 
 A Flappy Bird-style browser game built with React, Vite, Tailwind CSS via CDN, and HTML5 Canvas.
 
+🔗 **Live Demo:** [flappy-bird-k3wa.vercel.app](https://flappy-bird-k3wa.vercel.app)
+
 ## Demo
 
 ![Flappy Bird Demo](./project-demo.png)
